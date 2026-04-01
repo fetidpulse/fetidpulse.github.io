@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Promotion by FetidPulse</title>
+  <meta
+    name="description"
+    content="Promotion by FetidPulse — a known Reddit curator with a high-engagement account, niche communities, direct audience reach, fixed promotion options, revshare opportunities, and clear payment details."
+  />
+  <style>
+    :root{
+      --bg:#060606;
+      --bg-2:#0b0b0b;
+      --panel:#101010;
+      --panel-2:#151515;
+      --panel-3:#1b1b1b;
+      --panel-4:#222222;
+      --text:#f5f5f5;
+      --muted:#a8a8a8;
+      --line:rgba(255,255,255,0.08);
+      --line-strong:rgba(255,255,255,0.16);
+      --white:#ffffff;
+      --shadow:0 24px 70px rgba(0,0,0,0.42);
+      --radius:24px;
+      --radius-sm:16px;
+
+      --reddit:#ff5b22;
+      --redgifs:#d83a48;
+      --x:#000000;
+      --success:#36c46b;
+      --purple:#8b5cf6;
+      --green:#2ac769;
+      --green-deep:#178f49;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--text);
+      min-height:100vh;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(255,91,34,0.12), transparent 24%),
+        radial-gradient(circle at 85% 12%, rgba(216,58,72,0.10), transparent 24%),
+        radial-gradient(circle at 50% 40%, rgba(139,92,246,0.10), transparent 28%),
+        linear-gradient(180deg, #050505 0%, #090909 48%, #060606 100%);
+      padding:28px;
+      overflow-x:hidden;
+      position:relative;
+    }
+
+    body::before,
+    body::after{
+      content:"";
+      position:fixed;
+      width:340px;
+      height:340px;
+      border-radius:50%;
+      filter:blur(90px);
+      pointer-events:none;
+      opacity:.16;
+      z-index:0;
+      animation:floatGlow 10s ease-in-out infinite;
+    }
+
+    body::before{
+      top:80px;
+      left:-80px;
+      background:var(--reddit);
+    }
+
+    body::after{
+      bottom:100px;
+      right:-80px;
+      background:var(--redgifs);
+      animation-delay:-4s;
+    }
+
+    @keyframes floatGlow{
+      0%,100%{ transform:translateY(0px) translateX(0px); }
+      50%{ transform:translateY(-18px) translateX(8px); }
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .wrap{
+      position:relative;
+      z-index:1;
+      width:100%;
+      max-width:1160px;
+      margin:0 auto;
+    }
+
+    .hero,
+    .section,
+    .social-strip{
+      background:rgba(16,16,16,0.92);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(8px);
+    }
+
+    .hero{
+      overflow:hidden;
+      position:relative;
+      isolation:isolate;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:-1px;
+      background:
+        radial-gradient(circle at 15% 25%, rgba(255,91,34,0.18), transparent 22%),
+        radial-gradient(circle at 85% 20%, rgba(216,58,72,0.16), transparent 24%),
+        radial-gradient(circle at 60% 100%, rgba(139,92,246,0.16), transparent 28%);
+      z-index:-2;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto -80px -120px auto;
+      width:340px;
+      height:340px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,0.08), transparent 65%);
+      filter:blur(10px);
+      z-index:-1;
+      animation:heroPulse 7s ease-in-out infinite;
+    }
+
+    @keyframes heroPulse{
+      0%,100%{ transform:scale(1); opacity:.9; }
+      50%{ transform:scale(1.08); opacity:.65; }
+    }
+
+    .hero-inner{
+      padding:58px 44px 44px;
+    }
+
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:var(--success);
+      box-shadow:0 0 0 6px rgba(54,196,107,0.12);
+    }
+
+    h1{
+      font-size:clamp(44px, 7vw, 88px);
+      line-height:0.93;
+      letter-spacing:-0.05em;
+      max-width:940px;
+      margin-bottom:20px;
+    }
+
+    .lead{
+      max-width:860px;
+      font-size:20px;
+      line-height:1.72;
+      color:var(--muted);
+      margin-bottom:30px;
+    }
+
+    .hero-highlight{
+      color:#fff;
+      background:linear-gradient(90deg, #fff 0%, #d8d8d8 35%, #ffffff 100%);
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero-actions{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:54px;
+      padding:0 22px;
+      border-radius:14px;
+      border:1px solid var(--line-strong);
+      font-size:15px;
+      font-weight:700;
+      transition:transform .22s ease, opacity .22s ease, background .22s ease, border-color .22s ease, box-shadow .22s ease;
+      cursor:pointer;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .btn::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.16) 50%, transparent 100%);
+      transform:translateX(-130%);
+      transition:transform .6s ease;
+    }
+
+    .btn:hover::before{
+      transform:translateX(130%);
+    }
+
+    .btn-primary{
+      background:linear-gradient(135deg, #ffffff 0%, #ececec 100%);
+      color:#000;
+      border-color:rgba(255,255,255,0.75);
+      box-shadow:0 10px 24px rgba(255,255,255,0.08);
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-2px);
+      opacity:0.98;
+      box-shadow:0 16px 34px rgba(255,255,255,0.12);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,0.025);
+      color:var(--text);
+    }
+
+    .btn-secondary:hover{
+      transform:translateY(-2px);
+      background:rgba(255,255,255,0.06);
+      border-color:rgba(255,255,255,0.20);
+    }
+
+    .social-strip{
+      margin-top:16px;
+      padding:16px;
+    }
+
+    .social-strip-inner{
+      display:grid;
+      grid-template-columns:repeat(4, minmax(0, 1fr));
+      gap:14px;
+    }
+
+    .social-card{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      min-height:92px;
+      border-radius:20px;
+      padding:18px 20px;
+      color:#fff;
+      font-weight:700;
+      transition:transform .22s ease, opacity .22s ease, box-shadow .22s ease;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .social-card::after{
+      content:"";
+      position:absolute;
+      inset:auto -60px -60px auto;
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      background:rgba(255,255,255,0.10);
+      filter:blur(16px);
+    }
+
+    .social-card:hover{
+      transform:translateY(-4px);
+      opacity:0.98;
+      box-shadow:0 18px 40px rgba(0,0,0,0.24);
+    }
+
+    .social-left{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+      min-width:0;
+      position:relative;
+      z-index:1;
+    }
+
+    .social-name{
+      font-size:17px;
+      line-height:1.1;
+      letter-spacing:-0.02em;
+    }
+
+    .social-handle{
+      font-size:13px;
+      line-height:1.45;
+      color:rgba(255,255,255,0.92);
+      word-break:break-word;
+    }
+
+    .social-meta{
+      font-size:12px;
+      line-height:1.45;
+      color:rgba(255,255,255,0.82);
+      word-break:break-word;
+    }
+
+    .social-arrow{
+      flex-shrink:0;
+      font-size:20px;
+      line-height:1;
+      position:relative;
+      z-index:1;
+    }
+
+    .social-card.reddit{
+      background:linear-gradient(135deg, #ff713f 0%, #ff4500 100%);
+    }
+
+    .social-card.redgifs{
+      background:linear-gradient(135deg, #ff5e6c 0%, #c81f3d 100%);
+    }
+
+    .social-card.x{
+      background:linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .social-card.linktree{
+      background:linear-gradient(135deg, #39d98a 0%, #168f4b 100%);
+    }
+
+    .section{
+      margin-top:20px;
+      padding:34px;
+      position:relative;
+    }
+
+    .section::before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:22px;
+      right:22px;
+      height:1px;
+      background:linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+    }
+
+    .section h2{
+      font-size:32px;
+      line-height:1.05;
+      letter-spacing:-0.035em;
+      margin-bottom:10px;
+    }
+
+    .section-copy{
+      max-width:860px;
+      font-size:16px;
+      line-height:1.78;
+      color:var(--muted);
+      margin-bottom:26px;
+    }
+
+    .stats-blocks{
+      display:grid;
+      gap:18px;
+    }
+
+    .stats-group{
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
+        var(--panel-2);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px;
+    }
+
+    .stats-group-title{
+      font-size:18px;
+      font-weight:800;
+      letter-spacing:-0.02em;
+      margin-bottom:14px;
+      color:#fff;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:16px;
+    }
+
+    .stat{
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015)),
+        var(--panel-3);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:22px 20px;
+      transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .stat::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.06) 50%, transparent 100%);
+      transform:translateX(-120%);
+      transition:transform .65s ease;
+    }
+
+    .stat:hover{
+      transform:translateY(-4px);
+      border-color:rgba(255,255,255,0.18);
+      box-shadow:0 16px 32px rgba(0,0,0,0.22);
+    }
+
+    .stat:hover::after{
+      transform:translateX(120%);
+    }
+
+    .stat-value{
+      font-size:36px;
+      font-weight:800;
+      letter-spacing:-0.05em;
+      margin-bottom:8px;
+    }
+
+    .stat-label{
+      font-size:14px;
+      line-height:1.6;
+      color:var(--muted);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(4, minmax(0, 1fr));
+      gap:18px;
+    }
+
+    .card{
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
+        var(--panel-2);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:22px;
+      transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      top:-40px;
+      right:-40px;
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,0.08), transparent 70%);
+      pointer-events:none;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border-color:rgba(255,255,255,0.16);
+      box-shadow:0 18px 40px rgba(0,0,0,0.24);
+    }
+
+    .card-top{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:14px;
+    }
+
+    .card h3{
+      font-size:22px;
+      line-height:1.15;
+      letter-spacing:-0.02em;
+    }
+
+    .members{
+      display:inline-block;
+      margin:10px 0 12px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.09);
+      background:var(--panel-3);
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:0.01em;
+      color:#f0f0f0;
+    }
+
+    .card p{
+      font-size:15px;
+      line-height:1.72;
+      color:var(--muted);
+      margin-bottom:18px;
+    }
+
+    .card-link{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-size:14px;
+      font-weight:700;
+      color:#fff;
+      transition:gap .2s ease, opacity .2s ease;
+    }
+
+    .card-link:hover{
+      opacity:0.92;
+      gap:12px;
+    }
+
+    .info-list{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:16px;
+    }
+
+    .info-item{
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
+        var(--panel-2);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:20px;
+      transition:transform .22s ease, border-color .22s ease;
+    }
+
+    .info-item:hover{
+      transform:translateY(-4px);
+      border-color:rgba(255,255,255,0.15);
+    }
+
+    .info-item strong{
+      display:block;
+      font-size:16px;
+      margin-bottom:8px;
+    }
+
+    .info-item span{
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.72;
+    }
+
+    .pricing-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:18px;
+    }
+
+    .pricing-card{
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
+        var(--panel-2);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:24px;
+      transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .pricing-card::before{
+      content:"";
+      position:absolute;
+      top:-50px;
+      right:-50px;
+      width:140px;
+      height:140px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,0.07), transparent 70%);
+      pointer-events:none;
+    }
+
+    .pricing-card:hover{
+      transform:translateY(-5px);
+      border-color:rgba(255,255,255,0.16);
+      box-shadow:0 18px 40px rgba(0,0,0,0.24);
+    }
+
+    .pricing-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      min-height:34px;
+      padding:0 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.10);
+      background:rgba(255,255,255,0.035);
+      color:#ededed;
+      font-size:13px;
+      font-weight:700;
+      margin-bottom:14px;
+    }
+
+    .pricing-card h3{
+      font-size:26px;
+      line-height:1.1;
+      letter-spacing:-0.03em;
+      margin-bottom:10px;
+    }
+
+    .pricing-price{
+      font-size:42px;
+      font-weight:800;
+      letter-spacing:-0.05em;
+      margin-bottom:12px;
+    }
+
+    .pricing-card p{
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.72;
+      margin-bottom:18px;
+    }
+
+    .pricing-points{
+      display:grid;
+      gap:10px;
+    }
+
+    .pricing-point{
+      background:rgba(255,255,255,0.03);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px 14px;
+      font-size:14px;
+      line-height:1.65;
+      color:#f1f1f1;
+    }
+
+    .pricing-note{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.7;
+    }
+
+    .closing{
+      text-align:center;
+      padding:48px 26px;
+      background:
+        radial-gradient(circle at top center, rgba(255,91,34,0.10), transparent 24%),
+        linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)),
+        rgba(16,16,16,0.94);
+    }
+
+    .closing h2{
+      margin-bottom:14px;
+      font-size:34px;
+      letter-spacing:-0.04em;
+    }
+
+    .closing p{
+      max-width:760px;
+      margin:0 auto 24px;
+      color:var(--muted);
+      font-size:17px;
+      line-height:1.8;
+    }
+
+    .footer{
+      margin-top:18px;
+      padding-bottom:10px;
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+      letter-spacing:0.04em;
+      opacity:.88;
+    }
+
+    @media (max-width:1180px){
+      .social-strip-inner{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width:1080px){
+      .grid{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+
+      .stats{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width:960px){
+      .info-list,
+      .pricing-grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero-inner{
+        padding:42px 24px 30px;
+      }
+
+      .section{
+        padding:24px;
+      }
+    }
+
+    @media (max-width:640px){
+      body{
+        padding:16px;
+      }
+
+      .lead{
+        font-size:17px;
+      }
+
+      .hero-actions{
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+      .card-top{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      h1{
+        font-size:clamp(38px, 12vw, 58px);
+      }
+
+      .section h2,
+      .closing h2{
+        font-size:28px;
+      }
+
+      .grid,
+      .stats,
+      .social-strip-inner{
+        grid-template-columns:1fr;
+      }
+
+      .pricing-price{
+        font-size:36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="hero-inner">
+
+        <h1>Promotion by <span class="hero-highlight">FetidPulse</span></h1>
+
+        <p class="lead">
+          FetidPulse is a recognized curator with a high-engagement account, multiple niche communities,
+          and direct audience reach across Reddit, X, Redgifs and Telegram.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://t.me/fetidpulse" target="_blank" rel="noopener noreferrer">
+            Message Me
+          </a>
+          <a class="btn btn-secondary" href="#pricing">
+            View Pricing
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="social-strip">
+      <div class="social-strip-inner">
+        <a class="social-card reddit" href="https://www.reddit.com/user/fetidpulse/" target="_blank" rel="noopener noreferrer">
+          <div class="social-left">
+            <span class="social-name">Reddit</span>
+            <span class="social-handle">u/fetidpulse</span>
+            <span class="social-meta">3.2k+ followers · 55k+ karma</span>
+          </div>
+          <span class="social-arrow">→</span>
+        </a>
+
+        <a class="social-card redgifs" href="https://www.redgifs.com/users/fetidpulse" target="_blank" rel="noopener noreferrer">
+          <div class="social-left">
+            <span class="social-name">Redgifs</span>
+            <span class="social-handle">@fetidpulse</span>
+            <span class="social-meta">700+ followers · 6.1M+ total views</span>
+          </div>
+          <span class="social-arrow">→</span>
+        </a>
+
+        <a class="social-card x" href="https://x.com/fetidpulse" target="_blank" rel="noopener noreferrer">
+          <div class="social-left">
+            <span class="social-name">X</span>
+            <span class="social-handle">@fetidpulse</span>
+            <span class="social-meta">20+ followers (New account)</span>
+          </div>
+          <span class="social-arrow">→</span>
+        </a>
+
+        <a class="social-card linktree" href="https://linktr.ee/fetidpulse" target="_blank" rel="noopener noreferrer">
+          <div class="social-left">
+            <span class="social-name">Full Network</span>
+            <span class="social-handle">Linktree</span>
+            <span class="social-meta">View the full promotion network</span>
+          </div>
+          <span class="social-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2>Main Reach</h2>
+      <p class="section-copy">
+        The main value is my distribution power. I primarily promote content through my
+        Reddit presence, delivering targeted visibility instead of random, passive exposure,
+        while optional extra pushes on X and Telegram can be added when needed.
+      </p>
+
+      <div class="stats-blocks">
+        <div class="stats-group">
+          <div class="stats-group-title">Reddit</div>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-value">3.2k+</div>
+              <div class="stat-label">Followers on u/fetidpulse</div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-value">55k+</div>
+              <div class="stat-label">Karma on u/fetidpulse</div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-value">20k+</div>
+              <div class="stat-label">Average post views in a day</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-group">
+          <div class="stats-group-title">Redgifs</div>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-value">700+</div>
+              <div class="stat-label">Followers on Redgifs</div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-value">6.1M+</div>
+              <div class="stat-label">Total Redgifs views</div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-value">Extra Reach</div>
+              <div class="stat-label">Additional visibility layer beyond Reddit traffic</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Community Ecosystem</h2>
+      <p class="section-copy">
+        These communities support the broader ecosystem and help with niche visibility. The real value is direct promotion through FetidPulse, not simply letting anyone post.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-top">
+            <h3>r/deathmuses</h3>
+          </div>
+          <div class="members">2k+ members</div>
+          <p>
+            A dark aesthetic subreddit focused on goth, eerie, and visually intense content.
+            Built around <strong>goth-extreme aesthetics</strong>, perfect for darker, edgier, and high-impact visuals.
+          </p>
+          <a class="card-link" href="https://www.reddit.com/r/deathmuses/" target="_blank" rel="noopener noreferrer">
+            Visit subreddit →
+          </a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>r/FemboyLoverHub</h3>
+          </div>
+          <div class="members">700+ members</div>
+          <p>
+            A niche subreddit focused on femboy-centered content and audience interest.
+            Useful for creators targeting a more specific and engaged audience.
+          </p>
+          <a class="card-link" href="https://www.reddit.com/r/FemboyLoverHub/" target="_blank" rel="noopener noreferrer">
+            Visit subreddit →
+          </a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>r/TurkishLovers</h3>
+          </div>
+          <div class="members">3.7k+ members</div>
+          <p>
+            A Turkish-focused niche subreddit with its own audience angle.
+            Helpful for Turkish-themed discovery, targeted traffic, and audience fit.
+          </p>
+          <a class="card-link" href="https://www.reddit.com/r/TurkishLovers/" target="_blank" rel="noopener noreferrer">
+            Visit subreddit →
+          </a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>r/LesbianLoverHub</h3>
+          </div>
+          <div class="members">50+ members</div>
+          <p>
+            A focused niche subreddit built around lesbian-centered content.
+            Perfect for campaigns that need precise audience targeting and a strong content match.
+          </p>
+          <a class="card-link" href="https://www.reddit.com/r/LesbianLoverHub/" target="_blank" rel="noopener noreferrer">
+            Visit subreddit →
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What You Pay For</h2>
+      <p class="section-copy">
+        You are paying for direct promotion by FetidPulse. The value comes from personal posting, precise audience fit, and trusted distribution from an account already established in these niches.
+      </p>
+
+      <div class="info-list">
+        <div class="info-item">
+          <strong>Promotion by u/fetidpulse</strong>
+          <span>Your content gets personally shared through my account rather than left to chance.</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Known curator positioning</strong>
+          <span>I present the content directly, which gives it more weight than a random self-post.</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Niche audience targeting</strong>
+          <span>Campaigns can be matched with the most relevant subreddit and audience angle.</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Flexible campaign structure</strong>
+          <span>Available as fixed-price promotions, bundle deals, or revshare depending on the fit.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Deal Types</h2>
+      <p class="section-copy">
+        I offer simple direct promotion options as well as performance-based partnerships.
+      </p>
+
+      <div class="info-list">
+        <div class="info-item">
+          <strong>Boost Post</strong>
+          <span>I post your content through my account for natural feed exposure, and I can direct attention to your profile or approved links in the comments.</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Featured Post</strong>
+          <span>I post your content and pin it in the subreddit for 24 hours, creating a stronger and more premium placement.</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Revshare</strong>
+          <span>Open to revenue share and affiliate-style partnerships when the offer is strong and the niche fit makes sense.</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Single or Bundle Deals</strong>
+          <span>One-off promotions are available, and better rates can be discussed for multiple posts or multi-community campaigns. Extra distribution on X and Telegram is available for an additional $1 each.</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Promotion format</strong>
+          <span>Promoted content should be visually strong, clean, and suitable for the target audience. For selected campaigns, the final seconds may also include both the creator and curator name for added branding value.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <h2>Pricing</h2>
+      <p class="section-copy">
+        Pricing depends on the subreddit, the content fit, and whether you want a normal promoted post or a pinned featured slot.
+        Bulk deals and multi-post campaigns can receive discounted pricing. Extra distribution on X costs an additional $1, and extra distribution on Telegram also costs an additional $1.
+      </p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-badge">Entry option</div>
+          <h3>Boost Post</h3>
+          <div class="pricing-price">$3–10+</div>
+          <p>
+            A lower-cost option for creators who want direct promotion through my account without paying for a pinned slot.
+            Best for natural feed exposure and affordable testing.
+          </p>
+
+          <div class="pricing-points">
+            <div class="pricing-point">Posted by <strong>u/fetidpulse</strong></div>
+            <div class="pricing-point">Natural feed exposure inside the subreddit</div>
+            <div class="pricing-point">Creator profile or approved links can be highlighted in the comments</div>
+            <div class="pricing-point">Optional extra X push: <strong>+$1</strong></div>
+            <div class="pricing-point">Optional extra Telegram push: <strong>+$1</strong></div>
+          </div>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-badge">Premium option</div>
+          <h3>Featured Post</h3>
+          <div class="pricing-price">$10–25+</div>
+          <p>
+            A stronger placement for creators who want maximum visibility.
+            The post is published by me and pinned in the subreddit for 24 hours.
+          </p>
+
+          <div class="pricing-points">
+            <div class="pricing-point">Posted by <strong>u/fetidpulse</strong></div>
+            <div class="pricing-point">Pinned in the subreddit for <strong>24 hours</strong></div>
+            <div class="pricing-point">Pinned comment available for creator profile or approved links</div>
+            <div class="pricing-point">Optional extra X push: <strong>+$1</strong></div>
+            <div class="pricing-point">Optional extra Telegram push: <strong>+$1</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="pricing-note">
+        Example baseline pricing may vary by subreddit. Smaller niche communities can be cheaper, while stronger or better-performing subreddits may cost more.
+        If you book multiple posts or bundle multiple communities, the total price can be reduced. Extra sharing on X is +$1, and extra sharing on Telegram is +$1. Revshare deals are discussed manually.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Payment Methods</h2>
+      <p class="section-copy">
+        Once everything is confirmed, fixed-price promotions can be paid quickly through Paxum P2P, which usually takes around 30 seconds. Revshare deals are handled through the platform’s own payout system.
+      </p>
+
+      <div class="info-list">
+        <div class="info-item">
+          <strong>Fixed Deals</strong>
+          <span>We first agree on the campaign details, then payment can be sent via Paxum P2P in around 30 seconds.</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Paxum Payment</strong>
+          <span>Send via Paxum P2P to: <strong>fetidpulse@proton.me</strong> Fast, simple, and familiar for most adult creators.</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Revshare Deals</strong>
+          <span>Revenue share payments depend on the platform, tracking setup, and payout system tied to the campaign.</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Fast Coordination</strong>
+          <span>Quick setup, clear campaign structure, and direct communication before anything goes live.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section closing">
+      <h2>Known curator. Direct promotion. Real audience reach.</h2>
+      <p>
+        If you want your content promoted by FetidPulse, the network is open for boost posts, featured pinned posts, bundle deals, revshare partnerships, and extra X or Telegram pushes.
+      </p>
+      <div class="hero-actions" style="justify-content:center; margin-bottom:0;">
+        <a class="btn btn-primary" href="https://t.me/fetidpulse" target="_blank" rel="noopener noreferrer">
+          Message Me
+        </a>
+      </div>
+    </section>
+
+    <div class="footer">
+      FetidPulse
+    </div>
+  </div>
+</body>
+</html>
