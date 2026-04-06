@@ -6,8 +6,18 @@
   <title>Promotion by FetidPulse</title>
   <meta
     name="description"
-    content="Promotion by FetidPulse — a known Reddit curator with a high-engagement account, niche communities, direct audience reach, fixed promotion options, revshare opportunities, and clear payment details."
+    content="Promotion by FetidPulse — a curator and traffic distributor with high-engagement reach, niche communities, direct audience access, flexible promotion options, revshare opportunities, and clear payment details."
   />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
   <style>
     :root{
       --bg:#060606;
@@ -32,6 +42,7 @@
       --purple:#8b5cf6;
       --green:#2ac769;
       --green-deep:#178f49;
+      --quote:#d8d8d8;
     }
 
     *{
@@ -152,6 +163,22 @@
       padding:58px 44px 44px;
     }
 
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      min-height:36px;
+      padding:0 14px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.10);
+      background:rgba(255,255,255,0.03);
+      color:#ededed;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:0.02em;
+      margin-bottom:18px;
+    }
+
     .dot{
       width:8px;
       height:8px;
@@ -169,11 +196,11 @@
     }
 
     .lead{
-      max-width:860px;
+      max-width:900px;
       font-size:20px;
       line-height:1.72;
       color:var(--muted);
-      margin-bottom:30px;
+      margin-bottom:20px;
     }
 
     .hero-highlight{
@@ -182,6 +209,27 @@
       -webkit-background-clip:text;
       background-clip:text;
       -webkit-text-fill-color:transparent;
+    }
+
+    .hero-quote{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:30px;
+      padding:14px 18px;
+      border:1px solid rgba(255,255,255,0.10);
+      border-radius:16px;
+      background:rgba(255,255,255,0.03);
+      color:var(--quote);
+      font-size:15px;
+      font-weight:700;
+      letter-spacing:0.01em;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .hero-quote i{
+      color:#ffffff;
+      opacity:0.92;
     }
 
     .hero-actions{
@@ -195,6 +243,7 @@
       display:inline-flex;
       align-items:center;
       justify-content:center;
+      gap:10px;
       min-height:54px;
       padding:0 22px;
       border-radius:14px;
@@ -289,11 +338,30 @@
 
     .social-left{
       display:flex;
-      flex-direction:column;
-      gap:4px;
+      align-items:flex-start;
+      gap:14px;
       min-width:0;
       position:relative;
       z-index:1;
+    }
+
+    .social-icon{
+      width:44px;
+      height:44px;
+      border-radius:14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:rgba(255,255,255,0.12);
+      font-size:18px;
+      flex-shrink:0;
+    }
+
+    .social-text{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+      min-width:0;
     }
 
     .social-name{
@@ -357,11 +425,24 @@
       background:linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
     }
 
+    .section-title{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:10px;
+    }
+
+    .section-title i{
+      font-size:20px;
+      color:#ffffff;
+      opacity:0.92;
+    }
+
     .section h2{
       font-size:32px;
       line-height:1.05;
       letter-spacing:-0.035em;
-      margin-bottom:10px;
+      margin:0;
     }
 
     .section-copy{
@@ -387,6 +468,9 @@
     }
 
     .stats-group-title{
+      display:flex;
+      align-items:center;
+      gap:10px;
       font-size:18px;
       font-weight:800;
       letter-spacing:-0.02em;
@@ -429,6 +513,19 @@
 
     .stat:hover::after{
       transform:translateX(120%);
+    }
+
+    .stat-icon{
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:14px;
+      font-size:16px;
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.07);
     }
 
     .stat-value{
@@ -482,7 +579,7 @@
 
     .card-top{
       display:flex;
-      align-items:flex-start;
+      align-items:center;
       justify-content:space-between;
       gap:12px;
       margin-bottom:14px;
@@ -495,7 +592,9 @@
     }
 
     .members{
-      display:inline-block;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
       margin:10px 0 12px;
       padding:7px 10px;
       border-radius:999px;
@@ -551,7 +650,9 @@
     }
 
     .info-item strong{
-      display:block;
+      display:flex;
+      align-items:center;
+      gap:10px;
       font-size:16px;
       margin-bottom:8px;
     }
@@ -640,6 +741,9 @@
     }
 
     .pricing-point{
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
       background:rgba(255,255,255,0.03);
       border:1px solid var(--line);
       border-radius:14px;
@@ -761,6 +865,12 @@
       .pricing-price{
         font-size:36px;
       }
+
+      .hero-quote{
+        width:100%;
+        justify-content:center;
+        text-align:center;
+      }
     }
   </style>
 </head>
@@ -768,19 +878,30 @@
   <div class="wrap">
     <section class="hero">
       <div class="hero-inner">
+        <div class="eyebrow">
+          <span class="dot"></span>
+          Curator • Traffic Distributor • Niche Reach
+        </div>
 
         <h1>Promotion by <span class="hero-highlight">FetidPulse</span></h1>
 
         <p class="lead">
-          FetidPulse is a curator and traffic distributor specializing in high-engagement promotion, niche audience targeting, and direct reach across Reddit, X, Redgifs, and Telegram.
-          "Turning visibility into real traffic"
+          FetidPulse is a curator and traffic distributor specializing in high-engagement promotion,
+          niche audience targeting, and direct reach across Reddit, X, Redgifs, and Telegram.
         </p>
+
+        <div class="hero-quote">
+          <i class="fa-solid fa-quote-left"></i>
+          <span>Turning visibility into real traffic.</span>
+        </div>
 
         <div class="hero-actions">
           <a class="btn btn-primary" href="https://t.me/fetidpulse" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-paper-plane"></i>
             Message Me
           </a>
           <a class="btn btn-secondary" href="#pricing">
+            <i class="fa-solid fa-tags"></i>
             View Pricing
           </a>
         </div>
@@ -791,44 +912,59 @@
       <div class="social-strip-inner">
         <a class="social-card reddit" href="https://www.reddit.com/user/fetidpulse/" target="_blank" rel="noopener noreferrer">
           <div class="social-left">
-            <span class="social-name">Reddit</span>
-            <span class="social-handle">u/fetidpulse</span>
-            <span class="social-meta">3.3k+ followers · 57k+ karma</span>
+            <div class="social-icon"><i class="fa-brands fa-reddit-alien"></i></div>
+            <div class="social-text">
+              <span class="social-name">Reddit</span>
+              <span class="social-handle">u/fetidpulse</span>
+              <span class="social-meta">3.3k+ followers · 57k+ karma</span>
+            </div>
           </div>
-          <span class="social-arrow">→</span>
+          <span class="social-arrow"><i class="fa-solid fa-arrow-right"></i></span>
         </a>
 
         <a class="social-card redgifs" href="https://www.redgifs.com/users/fetidpulse" target="_blank" rel="noopener noreferrer">
           <div class="social-left">
-            <span class="social-name">Redgifs</span>
-            <span class="social-handle">@fetidpulse</span>
-            <span class="social-meta">740+ followers · 6.5M+ total views</span>
+            <div class="social-icon"><i class="fa-solid fa-play"></i></div>
+            <div class="social-text">
+              <span class="social-name">Redgifs</span>
+              <span class="social-handle">@fetidpulse</span>
+              <span class="social-meta">740+ followers · 6.5M+ total views</span>
+            </div>
           </div>
-          <span class="social-arrow">→</span>
+          <span class="social-arrow"><i class="fa-solid fa-arrow-right"></i></span>
         </a>
 
         <a class="social-card x" href="https://x.com/fetidpulse" target="_blank" rel="noopener noreferrer">
           <div class="social-left">
-            <span class="social-name">X</span>
-            <span class="social-handle">@fetidpulse</span>
-            <span class="social-meta">20+ followers (New account)</span>
+            <div class="social-icon"><i class="fa-brands fa-x-twitter"></i></div>
+            <div class="social-text">
+              <span class="social-name">X</span>
+              <span class="social-handle">@fetidpulse</span>
+              <span class="social-meta">20+ followers (New account)</span>
+            </div>
           </div>
-          <span class="social-arrow">→</span>
+          <span class="social-arrow"><i class="fa-solid fa-arrow-right"></i></span>
         </a>
 
         <a class="social-card linktree" href="https://linktr.ee/fetidpulse" target="_blank" rel="noopener noreferrer">
           <div class="social-left">
-            <span class="social-name">Full Network</span>
-            <span class="social-handle">Linktree</span>
-            <span class="social-meta">View the full promotion network</span>
+            <div class="social-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div class="social-text">
+              <span class="social-name">Full Network</span>
+              <span class="social-handle">Linktree</span>
+              <span class="social-meta">View the full promotion network</span>
+            </div>
           </div>
-          <span class="social-arrow">→</span>
+          <span class="social-arrow"><i class="fa-solid fa-arrow-right"></i></span>
         </a>
       </div>
     </div>
 
     <section class="section">
-      <h2>Main Reach</h2>
+      <div class="section-title">
+        <i class="fa-solid fa-bullhorn"></i>
+        <h2>Main Reach</h2>
+      </div>
       <p class="section-copy">
         The main value is my distribution power. I primarily promote content through my
         Reddit presence, delivering targeted visibility instead of random, passive exposure,
@@ -837,19 +973,25 @@
 
       <div class="stats-blocks">
         <div class="stats-group">
-          <div class="stats-group-title">Reddit</div>
+          <div class="stats-group-title">
+            <i class="fa-brands fa-reddit-alien"></i>
+            <span>Reddit</span>
+          </div>
           <div class="stats">
             <div class="stat">
+              <div class="stat-icon"><i class="fa-solid fa-user-group"></i></div>
               <div class="stat-value">3.3k+</div>
               <div class="stat-label">Followers on u/fetidpulse</div>
             </div>
 
             <div class="stat">
+              <div class="stat-icon"><i class="fa-solid fa-fire"></i></div>
               <div class="stat-value">57k+</div>
               <div class="stat-label">Karma on u/fetidpulse</div>
             </div>
 
             <div class="stat">
+              <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
               <div class="stat-value">20k+</div>
               <div class="stat-label">Average post views in a day</div>
             </div>
@@ -857,19 +999,25 @@
         </div>
 
         <div class="stats-group">
-          <div class="stats-group-title">Redgifs</div>
+          <div class="stats-group-title">
+            <i class="fa-solid fa-play"></i>
+            <span>Redgifs</span>
+          </div>
           <div class="stats">
             <div class="stat">
+              <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
               <div class="stat-value">740+</div>
               <div class="stat-label">Followers on Redgifs</div>
             </div>
 
             <div class="stat">
+              <div class="stat-icon"><i class="fa-solid fa-eye"></i></div>
               <div class="stat-value">6.5M+</div>
               <div class="stat-label">Total Redgifs views</div>
             </div>
 
             <div class="stat">
+              <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
               <div class="stat-value">Extra Reach</div>
               <div class="stat-label">Additional visibility layer beyond Reddit traffic</div>
             </div>
@@ -879,7 +1027,10 @@
     </section>
 
     <section class="section">
-      <h2>Community Ecosystem</h2>
+      <div class="section-title">
+        <i class="fa-solid fa-network-wired"></i>
+        <h2>Community Ecosystem</h2>
+      </div>
       <p class="section-copy">
         These communities support the broader ecosystem and help with niche visibility. The real value is direct promotion through FetidPulse, not simply letting anyone post.
       </p>
@@ -889,13 +1040,17 @@
           <div class="card-top">
             <h3>r/deathmuses</h3>
           </div>
-          <div class="members">2.2k+ members</div>
+          <div class="members">
+            <i class="fa-solid fa-users"></i>
+            2.2k+ members
+          </div>
           <p>
             A dark aesthetic subreddit focused on goth, eerie, and visually intense content.
             Built around <strong>goth-extreme aesthetics</strong>, perfect for darker, edgier, and high-impact visuals.
           </p>
           <a class="card-link" href="https://www.reddit.com/r/deathmuses/" target="_blank" rel="noopener noreferrer">
-            Visit subreddit →
+            <span>Visit subreddit</span>
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </article>
 
@@ -903,13 +1058,17 @@
           <div class="card-top">
             <h3>r/FemboyLoverHub</h3>
           </div>
-          <div class="members">800+ members</div>
+          <div class="members">
+            <i class="fa-solid fa-users"></i>
+            800+ members
+          </div>
           <p>
             A niche subreddit focused on femboy-centered content and audience interest.
             Useful for creators targeting a more specific and engaged audience.
           </p>
           <a class="card-link" href="https://www.reddit.com/r/FemboyLoverHub/" target="_blank" rel="noopener noreferrer">
-            Visit subreddit →
+            <span>Visit subreddit</span>
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </article>
 
@@ -917,13 +1076,17 @@
           <div class="card-top">
             <h3>r/TurkishLovers</h3>
           </div>
-          <div class="members">4.7k+ members</div>
+          <div class="members">
+            <i class="fa-solid fa-users"></i>
+            4.7k+ members
+          </div>
           <p>
             A niche subreddit with a Turkish-inspired audience angle.
             Open to global content, optimized for targeted discovery and strong audience fit.
           </p>
           <a class="card-link" href="https://www.reddit.com/r/TurkishLovers/" target="_blank" rel="noopener noreferrer">
-            Visit subreddit →
+            <span>Visit subreddit</span>
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </article>
 
@@ -931,91 +1094,109 @@
           <div class="card-top">
             <h3>r/LesbianLoverHub</h3>
           </div>
-          <div class="members">150+ members</div>
+          <div class="members">
+            <i class="fa-solid fa-users"></i>
+            150+ members
+          </div>
           <p>
             A focused niche subreddit built around lesbian-centered content.
             Perfect for campaigns that need precise audience targeting and a strong content match.
           </p>
           <a class="card-link" href="https://www.reddit.com/r/LesbianLoverHub/" target="_blank" rel="noopener noreferrer">
-            Visit subreddit →
+            <span>Visit subreddit</span>
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </article>
       </div>
     </section>
 
     <section class="section">
-      <h2>What You Pay For</h2>
+      <div class="section-title">
+        <i class="fa-solid fa-coins"></i>
+        <h2>What You Pay For</h2>
+      </div>
       <p class="section-copy">
-        You are paying for direct promotion by FetidPulse. The value comes from personal posting, precise audience fit, and trusted distribution from an account already established in these niches.
+        You are paying for direct promotion by FetidPulse. The value comes from personal posting,
+        precise audience fit, and trusted distribution from an account already established in these niches.
       </p>
 
       <div class="info-list">
         <div class="info-item">
-          <strong>Promotion by u/fetidpulse</strong>
+          <strong><i class="fa-solid fa-bullhorn"></i> Promotion by u/fetidpulse</strong>
           <span>Your content gets personally shared through my account rather than left to chance.</span>
         </div>
 
         <div class="info-item">
-          <strong>Known curator positioning</strong>
+          <strong><i class="fa-solid fa-star"></i> Known curator positioning</strong>
           <span>I present the content directly, which gives it more weight than a random self-post.</span>
         </div>
 
         <div class="info-item">
-          <strong>Niche audience targeting</strong>
+          <strong><i class="fa-solid fa-crosshairs"></i> Niche audience targeting</strong>
           <span>Campaigns can be matched with the most relevant subreddit and audience angle.</span>
         </div>
 
         <div class="info-item">
-          <strong>Flexible campaign structure</strong>
+          <strong><i class="fa-solid fa-sliders"></i> Flexible campaign structure</strong>
           <span>Available as fixed-price promotions, bundle deals, or revshare depending on the fit.</span>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <h2>Deal Types</h2>
+      <div class="section-title">
+        <i class="fa-solid fa-briefcase"></i>
+        <h2>Deal Types</h2>
+      </div>
       <p class="section-copy">
         I offer simple direct promotion options as well as performance-based partnerships.
       </p>
 
       <div class="info-list">
         <div class="info-item">
-          <strong>Boost Post</strong>
+          <strong><i class="fa-solid fa-rocket"></i> Boost Post</strong>
           <span>I post your content through my account for natural feed exposure, and I can direct attention to your profile or approved links in the comments.</span>
         </div>
 
         <div class="info-item">
-          <strong>Featured Post</strong>
+          <strong><i class="fa-solid fa-thumbtack"></i> Featured Post</strong>
           <span>I post your content and pin it in the subreddit for 24 hours, creating a stronger and more premium placement.</span>
         </div>
 
         <div class="info-item">
-          <strong>Revshare</strong>
+          <strong><i class="fa-solid fa-hand-holding-dollar"></i> Revshare</strong>
           <span>Open to revenue share and affiliate-style partnerships when the offer is strong and the niche fit makes sense.</span>
         </div>
 
         <div class="info-item">
-          <strong>Single or Bundle Deals</strong>
+          <strong><i class="fa-solid fa-boxes-stacked"></i> Single or Bundle Deals</strong>
           <span>One-off promotions are available, and better rates can be discussed for multiple posts or multi-community campaigns. Extra distribution on X and Telegram is available for an additional $1 each.</span>
         </div>
 
         <div class="info-item">
-          <strong>Promotion format</strong>
+          <strong><i class="fa-solid fa-wand-magic-sparkles"></i> Promotion format</strong>
           <span>Promoted content should be visually strong, clean, and suitable for the target audience. For selected campaigns, the final seconds may also include both the creator and curator name for added branding value.</span>
         </div>
       </div>
     </section>
 
     <section class="section" id="pricing">
-      <h2>Pricing</h2>
+      <div class="section-title">
+        <i class="fa-solid fa-tags"></i>
+        <h2>Pricing</h2>
+      </div>
       <p class="section-copy">
         Pricing depends on the subreddit, the content fit, and whether you want a normal promoted post or a pinned featured slot.
-        Bulk deals and multi-post campaigns can receive discounted pricing. Extra distribution on X costs an additional $1, and extra distribution on Telegram also costs an additional $1.
+        Bulk deals and multi-post campaigns can receive discounted pricing. Extra distribution on X costs an additional $1,
+        and extra distribution on Telegram also costs an additional $1.
       </p>
 
       <div class="pricing-grid">
         <div class="pricing-card">
-          <div class="pricing-badge">Entry option</div>
+          <div class="pricing-badge">
+            <i class="fa-solid fa-seedling"></i>
+            Entry option
+          </div>
           <h3>Boost Post</h3>
           <div class="pricing-price">$3–10+</div>
           <p>
@@ -1024,16 +1205,34 @@
           </p>
 
           <div class="pricing-points">
-            <div class="pricing-point">Posted by <strong>u/fetidpulse</strong></div>
-            <div class="pricing-point">Natural feed exposure inside the subreddit</div>
-            <div class="pricing-point">Creator profile or approved links can be highlighted in the comments</div>
-            <div class="pricing-point">Optional extra X push: <strong>+$1</strong></div>
-            <div class="pricing-point">Optional extra Telegram push: <strong>+$1</strong></div>
+            <div class="pricing-point">
+              <i class="fa-solid fa-user"></i>
+              <span>Posted by <strong>u/fetidpulse</strong></span>
+            </div>
+            <div class="pricing-point">
+              <i class="fa-solid fa-wave-square"></i>
+              <span>Natural feed exposure inside the subreddit</span>
+            </div>
+            <div class="pricing-point">
+              <i class="fa-solid fa-link"></i>
+              <span>Creator profile or approved links can be highlighted in the comments</span>
+            </div>
+            <div class="pricing-point">
+              <i class="fa-brands fa-x-twitter"></i>
+              <span>Optional extra X push: <strong>+$1</strong></span>
+            </div>
+            <div class="pricing-point">
+              <i class="fa-brands fa-telegram"></i>
+              <span>Optional extra Telegram push: <strong>+$1</strong></span>
+            </div>
           </div>
         </div>
 
         <div class="pricing-card">
-          <div class="pricing-badge">Premium option</div>
+          <div class="pricing-badge">
+            <i class="fa-solid fa-crown"></i>
+            Premium option
+          </div>
           <h3>Featured Post</h3>
           <div class="pricing-price">$10–25+</div>
           <p>
@@ -1042,64 +1241,86 @@
           </p>
 
           <div class="pricing-points">
-            <div class="pricing-point">Posted by <strong>u/fetidpulse</strong></div>
-            <div class="pricing-point">Pinned in the subreddit for <strong>24 hours</strong></div>
-            <div class="pricing-point">Pinned comment available for creator profile or approved links</div>
-            <div class="pricing-point">Optional extra X push: <strong>+$1</strong></div>
-            <div class="pricing-point">Optional extra Telegram push: <strong>+$1</strong></div>
+            <div class="pricing-point">
+              <i class="fa-solid fa-user"></i>
+              <span>Posted by <strong>u/fetidpulse</strong></span>
+            </div>
+            <div class="pricing-point">
+              <i class="fa-solid fa-thumbtack"></i>
+              <span>Pinned in the subreddit for <strong>24 hours</strong></span>
+            </div>
+            <div class="pricing-point">
+              <i class="fa-solid fa-comment-dots"></i>
+              <span>Pinned comment available for creator profile or approved links</span>
+            </div>
+            <div class="pricing-point">
+              <i class="fa-brands fa-x-twitter"></i>
+              <span>Optional extra X push: <strong>+$1</strong></span>
+            </div>
+            <div class="pricing-point">
+              <i class="fa-brands fa-telegram"></i>
+              <span>Optional extra Telegram push: <strong>+$1</strong></span>
+            </div>
           </div>
         </div>
       </div>
 
       <p class="pricing-note">
         Example baseline pricing may vary by subreddit. Smaller niche communities can be cheaper, while stronger or better-performing subreddits may cost more.
-        If you book multiple posts or bundle multiple communities, the total price can be reduced. Extra sharing on X is +$1, and extra sharing on Telegram is +$1. Revshare deals are discussed manually.
+        If you book multiple posts or bundle multiple communities, the total price can be reduced. Extra sharing on X is +$1, and extra sharing on Telegram is +$1.
+        Revshare deals are discussed manually.
       </p>
     </section>
 
     <section class="section">
-      <h2>Payment Methods</h2>
+      <div class="section-title">
+        <i class="fa-solid fa-wallet"></i>
+        <h2>Payment Methods</h2>
+      </div>
       <p class="section-copy">
-        Once everything is confirmed, fixed-price promotions can be paid quickly through Paxum P2P, which usually takes around 30 seconds. Revshare deals are handled through the platform’s own payout system.
+        Once everything is confirmed, fixed-price promotions can be paid quickly through Paxum P2P,
+        which usually takes around 30 seconds. Revshare deals are handled through the platform’s own payout system.
       </p>
 
       <div class="info-list">
         <div class="info-item">
-          <strong>Fixed Deals</strong>
+          <strong><i class="fa-solid fa-file-signature"></i> Fixed Deals</strong>
           <span>We first agree on the campaign details, then payment can be sent via Paxum P2P in around 30 seconds.</span>
         </div>
 
         <div class="info-item">
-          <strong>Paxum Payment</strong>
+          <strong><i class="fa-solid fa-money-bill-transfer"></i> Paxum Payment</strong>
           <span>Send via Paxum P2P to: <strong>fetidpulse@proton.me</strong> Fast, simple, and familiar for most adult creators.</span>
         </div>
 
         <div class="info-item">
-          <strong>Revshare Deals</strong>
+          <strong><i class="fa-solid fa-chart-pie"></i> Revshare Deals</strong>
           <span>Revenue share payments depend on the platform, tracking setup, and payout system tied to the campaign.</span>
         </div>
 
         <div class="info-item">
-          <strong>Fast Coordination</strong>
+          <strong><i class="fa-solid fa-bolt"></i> Fast Coordination</strong>
           <span>Quick setup, clear campaign structure, and direct communication before anything goes live.</span>
         </div>
       </div>
     </section>
 
     <section class="section closing">
-      <h2>Known curator. Direct promotion. Real audience reach.</h2>
+      <h2>Known curator. Strong distribution. Real audience reach.</h2>
       <p>
-        If you want your content promoted by FetidPulse, the network is open for boost posts, featured pinned posts, bundle deals, revshare partnerships, and extra X or Telegram pushes.
+        If you want your content promoted by FetidPulse, the network is open for boost posts,
+        featured pinned posts, bundle deals, revshare partnerships, and extra X or Telegram pushes.
       </p>
       <div class="hero-actions" style="justify-content:center; margin-bottom:0;">
         <a class="btn btn-primary" href="https://t.me/fetidpulse" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-paper-plane"></i>
           Message Me
         </a>
       </div>
     </section>
 
     <div class="footer">
-      FetidPulse
+      <i class="fa-solid fa-bolt"></i> FetidPulse
     </div>
   </div>
 </body>
