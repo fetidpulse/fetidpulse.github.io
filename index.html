@@ -490,6 +490,14 @@
       transform:translateX(120%);
     }
 
+    .stat-head{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:10px;
+      min-width:0;
+    }
+
     .stat-icon{
       width:42px;
       height:42px;
@@ -497,17 +505,20 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      margin-bottom:14px;
       font-size:16px;
       background:rgba(255,255,255,0.06);
       border:1px solid rgba(255,255,255,0.07);
+      flex-shrink:0;
     }
 
     .stat-value{
       font-size:36px;
       font-weight:800;
       letter-spacing:-0.05em;
-      margin-bottom:8px;
+      line-height:1;
+      margin:0;
+      min-width:0;
+      word-break:break-word;
     }
 
     .stat-label{
@@ -840,6 +851,14 @@
         justify-content:center;
         text-align:center;
       }
+
+      .stat-value{
+        font-size:32px;
+      }
+
+      .stat-head{
+        gap:10px;
+      }
     }
   </style>
 </head>
@@ -943,20 +962,26 @@
           </div>
           <div class="stats">
             <div class="stat">
-              <div class="stat-icon"><i class="fa-solid fa-user-group"></i></div>
-              <div class="stat-value">3.3k+</div>
+              <div class="stat-head">
+                <div class="stat-icon"><i class="fa-solid fa-user-group"></i></div>
+                <div class="stat-value">3.3k+</div>
+              </div>
               <div class="stat-label">Followers on u/fetidpulse</div>
             </div>
 
             <div class="stat">
-              <div class="stat-icon"><i class="fa-solid fa-fire"></i></div>
-              <div class="stat-value">57k+</div>
+              <div class="stat-head">
+                <div class="stat-icon"><i class="fa-solid fa-fire"></i></div>
+                <div class="stat-value">57k+</div>
+              </div>
               <div class="stat-label">Karma on u/fetidpulse</div>
             </div>
 
             <div class="stat">
-              <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
-              <div class="stat-value">20k+</div>
+              <div class="stat-head">
+                <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="stat-value">20k+</div>
+              </div>
               <div class="stat-label">Average post views in a day</div>
             </div>
           </div>
@@ -969,20 +994,26 @@
           </div>
           <div class="stats">
             <div class="stat">
-              <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
-              <div class="stat-value">740+</div>
+              <div class="stat-head">
+                <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                <div class="stat-value">740+</div>
+              </div>
               <div class="stat-label">Followers on Redgifs</div>
             </div>
 
             <div class="stat">
-              <div class="stat-icon"><i class="fa-solid fa-eye"></i></div>
-              <div class="stat-value">6.5M+</div>
+              <div class="stat-head">
+                <div class="stat-icon"><i class="fa-solid fa-eye"></i></div>
+                <div class="stat-value">6.5M+</div>
+              </div>
               <div class="stat-label">Total Redgifs views</div>
             </div>
 
             <div class="stat">
-              <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
-              <div class="stat-value">Extra Reach</div>
+              <div class="stat-head">
+                <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="stat-value">Extra Reach</div>
+              </div>
               <div class="stat-label">Additional visibility layer beyond Reddit traffic</div>
             </div>
           </div>
