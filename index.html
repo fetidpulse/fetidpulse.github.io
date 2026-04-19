@@ -6,7 +6,7 @@
   <title>Promotion by FetidPulse</title>
   <meta
     name="description"
-    content="Promotion by FetidPulse — a curator and traffic distributor with high-engagement reach, niche communities, direct audience access, highlight placements, flexible promotion options, revshare opportunities, and clear payment details."
+    content="Promotion by FetidPulse — a curator and traffic distributor with high-engagement reach, niche communities, direct audience access, premium highlight placements, flexible promotion options, revshare opportunities, and clear payment details."
   />
 
   <link
@@ -649,6 +649,12 @@
       gap:18px;
     }
 
+    .pricing-grid-3{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:18px;
+    }
+
     .pricing-card{
       background:
         linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
@@ -677,6 +683,11 @@
       transform:translateY(-5px);
       border-color:rgba(255,255,255,0.16);
       box-shadow:0 18px 40px rgba(0,0,0,0.24);
+    }
+
+    .pricing-card.featured-highlight{
+      border-color:rgba(255,255,255,0.16);
+      box-shadow:0 12px 30px rgba(0,0,0,0.22);
     }
 
     .pricing-badge{
@@ -781,11 +792,16 @@
       .stats{
         grid-template-columns:repeat(2, minmax(0, 1fr));
       }
+
+      .pricing-grid-3{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
     }
 
     @media (max-width:960px){
       .info-list,
-      .pricing-grid{
+      .pricing-grid,
+      .pricing-grid-3{
         grid-template-columns:1fr;
       }
 
@@ -835,7 +851,9 @@
       }
 
       .grid,
-      .stats{
+      .stats,
+      .pricing-grid,
+      .pricing-grid-3{
         grid-template-columns:1fr;
       }
 
@@ -1136,7 +1154,7 @@
 
         <div class="info-item">
           <strong><i class="fa-solid fa-gem"></i> Highlight placement</strong>
-          <span>Premium highlight slots keep selected creators visible longer and turn a normal post into a featured placement.</span>
+          <span>Premium highlight slots keep selected creators visible longer and turn a normal post into a featured showcase.</span>
         </div>
       </div>
     </section>
@@ -1157,18 +1175,18 @@
         </div>
 
         <div class="info-item">
+          <strong><i class="fa-solid fa-thumbtack"></i> Pinned Post</strong>
+          <span>Your content is pinned at the top of the subreddit for 24 hours, giving it a stronger short-term visibility spike than a normal feed post.</span>
+        </div>
+
+        <div class="info-item">
           <strong><i class="fa-solid fa-highlighter"></i> Highlight Placement</strong>
-          <span>Your content gets a premium spotlight slot for 3 days, 7 days, or 30 days, with stronger visibility than a normal one-time feed push.</span>
+          <span>Your content gets a premium spotlight slot for 3 days, 7 days, or 30 days, fully separated from standard boost and pinned placements.</span>
         </div>
 
         <div class="info-item">
           <strong><i class="fa-solid fa-hand-holding-dollar"></i> Revshare</strong>
           <span>Open to revenue share and affiliate-style partnerships when the offer is strong and the niche fit makes sense.</span>
-        </div>
-
-        <div class="info-item">
-          <strong><i class="fa-solid fa-boxes-stacked"></i> Single or Bundle Deals</strong>
-          <span>One-off promotions are available, and better rates can be discussed for multiple posts or multi-community campaigns. Extra distribution on Telegram is available for an additional $1 each.</span>
         </div>
       </div>
     </section>
@@ -1179,8 +1197,7 @@
         <h2>Pricing</h2>
       </div>
       <p class="section-copy">
-        Pricing depends on the subreddit, the content fit, and whether you want a standard promoted post or a premium highlight slot.
-        Bulk deals and multi-post campaigns can receive discounted pricing. Extra distribution on Telegram also costs an additional $1.
+        Clear promotion tiers based on visibility strength — from natural feed exposure to short-term pinned placement.
       </p>
 
       <div class="pricing-grid">
@@ -1192,7 +1209,7 @@
           <h3>Boost Post</h3>
           <div class="pricing-price">$5–10+</div>
           <p>
-            A lower-cost option for creators who want direct promotion through my account without paying for a highlight slot.
+            A lower-cost option for creators who want direct promotion through my account without paying for stronger placement.
             Best for natural feed exposure and affordable testing.
           </p>
 
@@ -1218,13 +1235,63 @@
 
         <div class="pricing-card">
           <div class="pricing-badge">
+            <i class="fa-solid fa-thumbtack"></i>
+            Short burst
+          </div>
+          <h3>Pinned Post — 24h</h3>
+          <div class="pricing-price">$10–20+</div>
+          <p>
+            A stronger short-term placement for creators who want a visibility spike.
+            Best for top-of-subreddit presence and stronger click potential over 24 hours.
+          </p>
+
+          <div class="pricing-points">
+            <div class="pricing-point">
+              <i class="fa-solid fa-user"></i>
+              <span>Posted by <strong>u/fetidpulse</strong></span>
+            </div>
+            <div class="pricing-point">
+              <i class="fa-solid fa-thumbtack"></i>
+              <span>Pinned at the top of the subreddit for <strong>24 hours</strong></span>
+            </div>
+            <div class="pricing-point">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Higher visibility spike than a normal boost post</span>
+            </div>
+            <div class="pricing-point">
+              <i class="fa-brands fa-telegram"></i>
+              <span>Optional extra Telegram push: <strong>+$1</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="pricing-note">
+        Standard promotion pricing can vary depending on the subreddit, niche fit, and content style.
+        If you book multiple posts or combine placements, bundle pricing can be discussed.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <i class="fa-solid fa-highlighter"></i>
+        <h2>Highlight Placement (Premium)</h2>
+      </div>
+      <p class="section-copy">
+        Highlight slots are premium placements separated from normal boost and pinned posts.
+        Unlike regular posts, these stay visible over time and function more like an active creator showcase.
+      </p>
+
+      <div class="pricing-grid-3">
+        <div class="pricing-card">
+          <div class="pricing-badge">
             <i class="fa-solid fa-fire"></i>
             Premium slot
           </div>
           <h3>Highlight — 3 Days</h3>
           <div class="pricing-price">$15+</div>
           <p>
-            A short premium spotlight for creators who want stronger visibility than a normal post without committing to a full-week slot.
+            A short premium spotlight for creators who want stronger visibility than a normal post without committing to a longer placement.
           </p>
 
           <div class="pricing-points">
@@ -1247,15 +1314,15 @@
           </div>
         </div>
 
-        <div class="pricing-card">
+        <div class="pricing-card featured-highlight">
           <div class="pricing-badge">
             <i class="fa-solid fa-crown"></i>
-            Stronger placement
+            Best balance
           </div>
           <h3>Highlight — 7 Days</h3>
           <div class="pricing-price">$25+</div>
           <p>
-            A stronger weekly spotlight that keeps the creator visible long enough to feel like an active featured slot rather than a quick boost.
+            A stronger weekly spotlight that keeps the creator visible long enough to feel like an active featured slot rather than a quick burst.
           </p>
 
           <div class="pricing-points">
@@ -1354,7 +1421,7 @@
       <h2>Known curator. Strong distribution. Premium highlight slots.</h2>
       <p>
         If you want your content promoted by FetidPulse, the network is open for boost posts,
-        highlight placements, bundle deals, revshare partnerships, and extra Telegram pushes.
+        pinned posts, highlight placements, bundle deals, revshare partnerships, and extra Telegram pushes.
       </p>
       <div class="hero-actions" style="justify-content:center; margin-bottom:0;">
         <a class="btn btn-primary" href="https://t.me/fetidpulse" target="_blank" rel="noopener noreferrer">
